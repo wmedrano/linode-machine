@@ -10,7 +10,7 @@ setup_service() {
     SRC_TEMPLATE=systemctl/$1.service
     DST=/etc/systemd/system/$1.service
     echo "Exporting ${SRC_TEMPLATE} to ${DST}"
-    sudo sed "s~WMEDRANO_ROOT~${ROOT_DIR}~g" $SRC_TEMPLATE >$DST
+    sudo sed "s~WMEDRANO_ROOT~${ROOT_DIR}~g" $SRC_TEMPLATE >$DST || exit
     cat $DST
     sudo systemctl daemon-reload
     sudo systemctl disable  ${SERVICE}

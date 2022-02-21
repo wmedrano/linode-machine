@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=WMEDRANO_ROOT/caddy/cmd/caddy/caddy run --config WMEDRANO_ROOT/Caddyfile --watch
+ExecStart=caddy run --config WMEDRANO_ROOT/Caddyfile --watch
 Restart=always
 
 [Install]

@@ -1,24 +1,17 @@
 # Linode Machine
 
-## systemctl
-
-Systemctl is used to manage services. To enable a service, for example caddy:
+## Quickstart
 
 ```shell
-sudo ./export_service caddy
-# To run the service continuously.
-sudo systemctl enable caddy
-# Check the status.
-systemctl status caddy.service
+sudo ./install_all.sh
+sudo ./setup_services.sh
 ```
 
 ## Caddy
 
-Caddy is a service that implements a reverse proxy and automatic SSl/HTTPS
-support. The config is at Caddyfile.
+Reverse proxy service with automatic SSL/HTTPS support. Caddy receives external
+requests and routes them to the appropriate port.
 
-```shell
-# From root of repo.
-./caddy.sh
-```
+## systemctl
 
+Systemd is used to bring up services.
