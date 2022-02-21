@@ -1,0 +1,11 @@
+[Unit]
+Description=reverse proxy with SSL/HTTPS support.
+After=network.target
+
+[Service]
+User=root
+ExecStart=WMEDRANO_ROOT/caddy/cmd/caddy/caddy run --config WMEDRANO_ROOT/Caddyfile --watch
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,5 +1,5 @@
 wmedrano.dev {
-        # Simple fileserver started with:
-	# python3 -m http.server 8000
-	reverse_proxy 127.0.0.1:8000
+    # Simple fileserver started with:
+    # python3 -m http.server 8000
+    reverse_proxy 127.0.0.1:8000
 }
