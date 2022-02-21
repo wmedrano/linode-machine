@@ -3,3 +3,7 @@ wmedrano.dev {
     # python3 -m http.server 8000
     reverse_proxy 127.0.0.1:8000
 }
+
+jupyter.wmedrano.dev {
+    reverse_proxy 127.0.0.1:9000
+}

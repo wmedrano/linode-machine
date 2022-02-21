@@ -15,3 +15,7 @@ requests and routes them to the appropriate port.
 ## systemctl
 
 Systemd is used to bring up services.
+
+* Status - systemctl status <service>
+* Detailed Status - sudo systemctl status <service>
+* Logs - sudo journalctl -u <service>

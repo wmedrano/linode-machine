@@ -1,0 +1,14 @@
+[Unit]
+Description=Jupyterlab server
+After=network.target
+
+[Service]
+User=wmedrano
+WorkingDirectory=WMEDRANO_ROOT/jupyter-server
+ExecStart=/bin/bash -c '\
+   source venv/bin/activate; \
+   exec jupyter-lab --port=9000 --no-browser --ip "*"'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

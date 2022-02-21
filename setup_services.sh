@@ -19,3 +19,4 @@ setup_service() {
 }
 
 setup_service caddy
+setup_service wmedrano-jupyterlab

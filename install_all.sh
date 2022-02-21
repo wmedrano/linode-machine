@@ -9,4 +9,9 @@ install_caddy() {
     sudo apt install caddy
 }
 
+install_jupyter() {
+    sudo apt install python3 python3-venv
+}
+
 install_caddy
+install_jupyter
